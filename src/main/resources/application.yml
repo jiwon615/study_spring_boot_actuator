@@ -3,7 +3,8 @@ management:
     web: # ?? ?? ?? (web / jmx)
       exposure:
         include: "*"  # ??? ?? ( include / exclude)
-#        exclude: "env,beans"
+  #        exclude: "env,beans"
+      base-path: "/manage"
   endpoint:
     shutdown:
       enabled: true
