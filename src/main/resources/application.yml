@@ -1,0 +1,9 @@
+management:
+  endpoints:
+    web: # ?? ?? ?? (web / jmx)
+      exposure:
+        include: "*"  # ??? ?? ( include / exclude)
+#        exclude: "env,beans"
+  endpoint:
+    shutdown:
+      enabled: true
