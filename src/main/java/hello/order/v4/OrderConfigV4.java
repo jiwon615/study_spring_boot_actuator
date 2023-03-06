@@ -1,7 +1,6 @@
 package hello.order.v4;
 
 import hello.order.OrderService;
-import hello.order.v2.OrderServiceV2;
 import io.micrometer.core.aop.TimedAspect;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +11,7 @@ public class OrderConfigV4 {
 
     @Bean
     public OrderService orderService() {
-        return new OrderServiceV2();
+        return new OrderServiceV4();
     }
 
     /**
